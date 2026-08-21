@@ -1,0 +1,83 @@
+html { scroll-behavior: smooth; }
+
+.home-eyebrow {
+  color: #f39200;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  margin-bottom: 1rem;
+}
+
+.home-cta { margin-top: 1.6rem; }
+.home-cta span { font-size: 1.25rem; margin-left: .55rem; }
+
+.learning-modules { background: #f7f9fc; }
+.module-intro { padding: 5.5rem 1.5rem 6rem; }
+.module-intro .title-wrapper { max-width: 680px; }
+.module-intro .subtitle { line-height: 1.7; }
+
+.module-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 3.25rem auto 0;
+  max-width: 1180px;
+}
+
+.module-card {
+  background: #fff;
+  border: 1px solid #e7ecf3;
+  border-radius: 12px;
+  color: #444f60;
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  overflow: hidden;
+  padding: 1.75rem;
+  position: relative;
+  text-decoration: none;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.module-card:hover {
+  color: #444f60;
+  border-color: var(--module-color);
+  box-shadow: 0 18px 34px rgba(38, 55, 77, .14);
+  transform: translateY(-7px);
+}
+
+.module-card::before {
+  background: var(--module-color);
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.module-card--ceh { --module-color: #f39200; }
+.module-card--malware { --module-color: #df506a; }
+.module-card--soc { --module-color: #4fc1ea; }
+.module-card--forensics { --module-color: #5b72d6; }
+
+.module-icon {
+  align-items: center;
+  background: #f4f7fb;
+  border-radius: 10px;
+  color: var(--module-color);
+  display: flex;
+  font-size: 1.35rem;
+  height: 46px;
+  justify-content: center;
+  width: 46px;
+}
+
+.module-number { color: #b3bdc9; font-size: .78rem; font-weight: 700; letter-spacing: .1em; margin-top: 1.35rem; }
+.module-card h3 { font-size: 1.35rem; font-weight: 700; margin: .32rem 0 .7rem; }
+.module-card p { color: #718096; font-size: .94rem; line-height: 1.6; }
+.module-link { color: var(--module-color); font-size: .88rem; font-weight: 700; margin-top: auto; padding-top: 1rem; }
+.module-link b { font-size: 1.1rem; margin-left: .3rem; }
+
+@media (max-width: 1023px) { .module-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 680px; } }
+@media (max-width: 560px) { .module-intro { padding: 4rem 1.25rem; } .module-grid { grid-template-columns: 1fr; margin-top: 2.5rem; } .module-card { min-height: 245px; } }

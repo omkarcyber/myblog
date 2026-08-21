@@ -158,3 +158,54 @@ div.scroll::-webkit-scrollbar { width: 0px; }
 /* .hide{
     display: none;
 } */
+
+/* Keep the global navigation intentionally minimal. The Tags hamburger remains available. */
+.navbar-menu .navbar-item.has-dropdown {
+  display: none !important;
+}
+
+/* Clear, touch-friendly primary navigation. */
+.navbar-menu .navbar-end > a.is-secondary {
+  color: #536174 !important;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  padding: .85rem 1rem;
+}
+
+.navbar-menu .navbar-end > a.is-secondary:hover,
+.navbar-menu .navbar-end > a.is-secondary:focus {
+  color: #f39200 !important;
+}
+
+/* Make every visible header label easy to scan against the white bar. */
+.navbar.is-fresh .navbar-item,
+.navbar.is-fresh .navbar-item.left-menu-icon-wrapper {
+  color: #344258 !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.navbar.is-fresh .navbar-end > a.is-secondary {
+  border-radius: 6px;
+  margin: .25rem .15rem;
+}
+
+.navbar.is-fresh .navbar-end > a.is-secondary:hover,
+.navbar.is-fresh .navbar-end > a.is-secondary:focus {
+  background: #fff4e6;
+  color: #c97600 !important;
+}
+
+.navbar.is-fresh {
+  border-bottom: 1px solid #e7ecf3;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu .navbar-end > a.is-secondary {
+    align-items: center;
+    display: flex;
+    min-height: 48px;
+    padding: .9rem 1.25rem;
+  }
+}

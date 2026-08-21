@@ -9,9 +9,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/home.css">
 <link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.css">
 <link rel="stylesheet" type="text/css" href="/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/css/refresh.css">
+<link rel="stylesheet" type="text/css" href="/css/refresh.css?v=nav-20260821">
 <link rel="stylesheet" type="text/css" href="/css/devicon.min.css">
     
 
@@ -21,7 +22,7 @@
 
     <div id="preloader">
       <div id="status"></div>
-    </div><section class="hero is-fullheight is-default is-bold"><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+    </div><header class="site-header"><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
 
@@ -60,12 +61,7 @@
       
       <div class="navbar-end">
         
-          <a href="/" class="navbar-item is-secondary">Homepage</a><a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/posts/" class="navbar-item is-secondary">Posts</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a href="/category/" class="navbar-link">Category</a>
-              <div class="navbar-dropdown">
-                <a href="/category/casestudy/" class="navbar-item">Case Study</a><a href="/category/tools/" class="navbar-item">Tools</a></div>
-            </div>
+          <a href="/" class="navbar-item is-secondary">Homepage</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/about/" class="navbar-item is-secondary">About Me</a>
         
           
             
@@ -85,7 +81,7 @@
         
         
         
-        <div class="navbar-item">
+        <div class="navbar-item" style="display: none !important;">
           <div class="dropdown is-hoverable is-centered" >
             <div class="dropdown-trigger" >
               <button class="button is-active" 
@@ -167,11 +163,7 @@
           </div>
         </a>
       </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
-        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Homepage</a><a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><div class="navbar-item has-dropdown is-hoverable">
-                <a href="/category/" class="navbar-link">Category</a>
-                <div class="navbar-dropdown">
-                  <a href="/category/casestudy/" class="navbar-item">Case Study</a><a href="/category/tools/" class="navbar-item">Tools</a></div>
-              </div>
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Homepage</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/about/" class="navbar-item is-secondary">About Me</a>
           
             
               
@@ -191,7 +183,7 @@
           
           
           
-          <div class="navbar-item">
+          <div class="navbar-item" style="display: none !important;">
             <div class="dropdown is-hoverable is-centered" >
               <div class="dropdown-trigger" >
                 <button class="button is-active" 
@@ -237,27 +229,48 @@
         </div>
       </div>
     </div>
-  </nav>
-<div class="hero-body">
+  </nav></header>
+    <main id="learning-modules" class="learning-modules">
+      <section class="section module-intro">
         <div class="container">
-            <div class="columns is-vcentered">
-            <div class="column is-5 is-offset-1 landing-caption">
-                <h1 class="title is-1 is-bold is-spaced">Computer Forensic ?</h1><h2 class="subtitle is-5 is-muted">
-                
-&#39;&#39;Main goal of Computer Forensic is to Collect,preserve and analyze data in a way that preserves the integrity of the evidence collected so it can be used in a legal case&#39;&#39;
- 
-
-                </h2>
-            </div>
-            <div class="column is-5 is-offset-1">
-                <figure class="image"><img src="/images/avataaars.png" 
-                     style="width:500px" alt="Myself">
-                </figure>
-            </div>
-            </div>
+          <div class="title-wrapper has-text-centered">
+            <p class="home-eyebrow">CHOOSE A PATH</p>
+            <h2 class="title is-2 section-title">Learn by module</h2>
+            <p class="subtitle is-5 is-muted">Jump straight to the subject you want to study. Each module collects its related posts in one place.</p>
+          </div>
+          <div class="module-grid">
+            <a class="module-card module-card--ceh" href="/posts/#ceh">
+              <span class="module-icon"><i class="fas fa-user-secret"></i></span>
+              <span class="module-number">01</span>
+              <h3>CEH</h3>
+              <p>Ethical hacking concepts, tools, reconnaissance, and lab notes.</p>
+              <span class="module-link">View CEH posts <b>→</b></span>
+            </a>
+            <a class="module-card module-card--malware" href="/posts/#malware-analysis">
+              <span class="module-icon"><i class="fas fa-bug"></i></span>
+              <span class="module-number">02</span>
+              <h3>Malware Analysis</h3>
+              <p>Static and dynamic analysis techniques, indicators, and case notes.</p>
+              <span class="module-link">View analysis posts <b>→</b></span>
+            </a>
+            <a class="module-card module-card--soc" href="/posts/#soc">
+              <span class="module-icon"><i class="fas fa-shield-alt"></i></span>
+              <span class="module-number">03</span>
+              <h3>SOC</h3>
+              <p>Alert triage, detection engineering, incident response, and blue-team workflows.</p>
+              <span class="module-link">View SOC posts <b>→</b></span>
+            </a>
+            <a class="module-card module-card--forensics" href="/posts/#digital-forensics">
+              <span class="module-icon"><i class="fas fa-fingerprint"></i></span>
+              <span class="module-number">04</span>
+              <h3>Digital Forensics</h3>
+              <p>Evidence acquisition, preservation, examination, and forensic tooling.</p>
+              <span class="module-link">View forensic posts <b>→</b></span>
+            </a>
+          </div>
         </div>
-        </div>
-    </section><footer class="footer footer-dark">
+      </section>
+    </main><footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column">

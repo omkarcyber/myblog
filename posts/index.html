@@ -8,9 +8,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/modules.css">
 <link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.css">
 <link rel="stylesheet" type="text/css" href="/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/css/refresh.css">
+<link rel="stylesheet" type="text/css" href="/css/refresh.css?v=nav-20260821">
 <link rel="stylesheet" type="text/css" href="/css/devicon.min.css">
     
 
@@ -59,12 +60,7 @@
       
       <div class="navbar-end">
         
-          <a href="/" class="navbar-item is-secondary">Homepage</a><a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/posts/" class="navbar-item is-secondary">Posts</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a href="/category/" class="navbar-link">Category</a>
-              <div class="navbar-dropdown">
-                <a href="/category/casestudy/" class="navbar-item">Case Study</a><a href="/category/tools/" class="navbar-item">Tools</a></div>
-            </div>
+          <a href="/" class="navbar-item is-secondary">Homepage</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/about/" class="navbar-item is-secondary">About Me</a>
         
           
             
@@ -84,7 +80,7 @@
         
         
         
-        <div class="navbar-item">
+        <div class="navbar-item" style="display: none !important;">
           <div class="dropdown is-hoverable is-centered" >
             <div class="dropdown-trigger" >
               <button class="button is-active" 
@@ -166,11 +162,7 @@
           </div>
         </a>
       </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
-        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Homepage</a><a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><div class="navbar-item has-dropdown is-hoverable">
-                <a href="/category/" class="navbar-link">Category</a>
-                <div class="navbar-dropdown">
-                  <a href="/category/casestudy/" class="navbar-item">Case Study</a><a href="/category/tools/" class="navbar-item">Tools</a></div>
-              </div>
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Homepage</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/about/" class="navbar-item is-secondary">About Me</a>
           
             
               
@@ -190,7 +182,7 @@
           
           
           
-          <div class="navbar-item">
+          <div class="navbar-item" style="display: none !important;">
             <div class="dropdown is-hoverable is-centered" >
               <div class="dropdown-trigger" >
                 <button class="button is-active" 
@@ -241,31 +233,31 @@
         <div class="container">
           
             
-              <h1 class="title section-title">Posts</h1>
-              <h5 class="subtitle is-5 is-muted"></h5>
+              <h1 class="title section-title">Learning modules</h1>
+              <h5 class="subtitle is-5 is-muted">Browse posts by cybersecurity discipline.</h5>
               <div class="divider"></div>        
               <div class="section is-small">
-                <div class="columns">
-                    <div class="column is-4"><div class="box">
-      <figure class="image is-3by2">
-        <a href="/posts/testing_markdown/">
-        
-          <img src="/posts/testing_markdown/forimage_hube300cc787cce89f857f2b80467aee38_94622_600x0_resize_q75_box.jpg" alt="">
-        
-        </a>
-      </figure>
-      <h3 class="title is-5 refresh-summary-title">
-        For Website  Developer.
-      </h3>
-      <p class="refresh-summary">For website development. Draft = False so Page is online</p> 
-      <div class="action has-text-right">
-        <a href="/posts/testing_markdown/" class="button is-primary">
-                Read more
-            </a>
-      </div>
-    </div>
-  </div>
-<div class="column is-4"><div class="box">
+                <section id="ceh" class="post-module">
+                  <h2 class="title is-3">CEH</h2>
+                  <p class="subtitle is-6 is-muted">Ethical hacking notes and hands-on labs.</p>
+                  <div class="post-module-empty">CEH posts are coming soon.</div>
+                </section>
+                <section id="malware-analysis" class="post-module">
+                  <h2 class="title is-3">Malware Analysis</h2>
+                  <p class="subtitle is-6 is-muted">Malware research, reverse engineering, and analysis workflows.</p>
+                  <div class="post-module-empty">Malware analysis posts are coming soon.</div>
+                </section>
+                <section id="soc" class="post-module">
+                  <h2 class="title is-3">SOC</h2>
+                  <p class="subtitle is-6 is-muted">Detection, alert triage, and incident response.</p>
+                  <div class="post-module-empty">SOC posts are coming soon.</div>
+                </section>
+                <section id="digital-forensics" class="post-module">
+                  <h2 class="title is-3">Digital Forensics</h2>
+                  <p class="subtitle is-6 is-muted">Evidence collection, examination, forensic tools, and investigations.</p>
+                  <h3 class="post-module-heading">Guides &amp; Q&amp;A</h3>
+                  <div class="columns is-multiline">
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/posts/forensic_question_post/" tabindex="0" aria-label="Read Forensic Q and A">
       <figure class="image is-3by2">
         <a href="/posts/forensic_question_post/">
         
@@ -276,7 +268,7 @@
       <h3 class="title is-5 refresh-summary-title">
         Forensic Q&amp;A
       </h3>
-      <p class="refresh-summary">In this post,I will solve some standard forensic question</p> 
+      <p class="refresh-summary">Standard forensic questions and practical answers.</p>
       <div class="action has-text-right">
         <a href="/posts/forensic_question_post/" class="button is-primary">
                 Read more
@@ -284,9 +276,56 @@
       </div>
     </div>
   </div>
-
                   </div>
-                
+                  <h3 class="post-module-heading">Forensic Tools</h3>
+                  <div class="columns is-multiline">
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/category/tools/ddddfldd/" tabindex="0" aria-label="Read Data acquisition tools for Linux">
+      <figure class="image is-3by2">
+        <a href="/category/tools/ddddfldd/"><img src="/category/tools/ddddfldd/ddsummary_hucbfab8fd660600a0f185390c114a97ac_22900_600x0_resize_q75_box.jpg" alt="">
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">Data acquisition tools for Linux</h3>
+      <p class="refresh-summary">Understanding dd, dcfldd, and dc3dd for forensic acquisition.</p>
+      <div class="action has-text-right">
+        <a href="/category/tools/ddddfldd/" class="button is-primary">Read more</a>
+      </div>
+    </div>
+  </div>
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/category/tools/pathfinder_tool/" tabindex="0" aria-label="Read Cellebrite PathFinder Tool">
+      <figure class="image is-3by2"><a href="/category/tools/pathfinder_tool/"><img src="/category/tools/pathfinder_tool/celleb_hu863044eaed4de10728e8417775172825_94699_600x0_resize_q75_box.jpg" alt=""></a></figure>
+      <h3 class="title is-5 refresh-summary-title">Cellebrite PathFinder Tool</h3>
+      <p class="refresh-summary">Forensic data analysis and visualization tool.</p>
+      <div class="action has-text-right"><a href="/category/tools/pathfinder_tool/" class="button is-primary">Read more</a></div>
+    </div></div>
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/category/tools/mpetool/" tabindex="0" aria-label="Read MPE Plus Tool">
+      <figure class="image is-3by2"><a href="/category/tools/mpetool/"><img src="/category/tools/mpetool/mpeimage_hu050b243239bbb67353fe71b2e5efef4a_198931_600x0_resize_q75_box.jpg" alt=""></a></figure>
+      <h3 class="title is-5 refresh-summary-title">MPE+ Tool</h3>
+      <p class="refresh-summary">Mobile-device data review tool.</p>
+      <div class="action has-text-right"><a href="/category/tools/mpetool/" class="button is-primary">Read more</a></div>
+    </div></div>
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/category/tools/timestomping/" tabindex="0" aria-label="Read NTFS and ext4 file stomping">
+      <figure class="image is-3by2"><a href="/category/tools/timestomping/"><img src="/category/tools/timestomping/timestomping_hu6e8492aa25b2b94f01c190e0660cfac4_80949_600x0_resize_q75_box.jpg" alt=""></a></figure>
+      <h3 class="title is-5 refresh-summary-title">NTFS and ext4 file stomping</h3>
+      <p class="refresh-summary">Manipulating file timestamps on NTFS and ext4 file systems.</p>
+      <div class="action has-text-right"><a href="/category/tools/timestomping/" class="button is-primary">Read more</a></div>
+    </div></div>
+                  </div>
+                  <h3 class="post-module-heading">Case Studies</h3>
+                  <div class="columns is-multiline">
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/category/casestudy/casestudy_cellebriteufed/" tabindex="0" aria-label="Read Case Study Cellebrite UFED">
+      <figure class="image is-3by2"><a href="/category/casestudy/casestudy_cellebriteufed/"><img src="/category/casestudy/casestudy_cellebriteufed/cellebriteUFED_hufa9dad35748717bae222f9f9f304f15a_481447_600x0_resize_q75_box.jpg" alt=""></a></figure>
+      <h3 class="title is-5 refresh-summary-title">Case Study: Cellebrite UFED</h3>
+      <p class="refresh-summary">Key evidence recovered with Cellebrite solutions in a murder case.</p>
+      <div class="action has-text-right"><a href="/category/casestudy/casestudy_cellebriteufed/" class="button is-primary">Read more</a></div>
+    </div></div>
+                    <div class="column is-4"><div class="box forensic-post-card" data-post-url="/category/casestudy/casestudy_mpe_tool/" tabindex="0" aria-label="Read Case Study MPE Plus Tool">
+      <figure class="image is-3by2"><a href="/category/casestudy/casestudy_mpe_tool/"><img src="/category/casestudy/casestudy_mpe_tool/mpeimage_huef6d18b262f869b13924cab9639ba283_45260_600x0_resize_q75_box.jpg" alt=""></a></figure>
+      <h3 class="title is-5 refresh-summary-title">Case Study: MPE+ Tool</h3>
+      <p class="refresh-summary">Using the MPE+ mobile-forensics tool in an investigation.</p>
+      <div class="action has-text-right"><a href="/category/casestudy/casestudy_mpe_tool/" class="button is-primary">Read more</a></div>
+    </div></div>
+                  </div>
+                </section>
               </div>
             
           
@@ -605,6 +644,17 @@
   document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('.codeinline').forEach((block) => {
       hljs.highlightBlock(block);
+    });
+    document.querySelectorAll('.forensic-post-card').forEach((card) => {
+      card.addEventListener('click', (event) => {
+        if (!event.target.closest('a')) window.location.href = card.dataset.postUrl;
+      });
+      card.addEventListener('keydown', (event) => {
+        if ((event.key === 'Enter' || event.key === ' ') && !event.target.closest('a')) {
+          event.preventDefault();
+          window.location.href = card.dataset.postUrl;
+        }
+      });
     });
   });
 </script>

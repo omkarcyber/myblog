@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+    // Keep the visible header focused on Homepage, Posts, and About Me.
+    // The Tags sidebar is intentionally separate and remains available.
+    $('.navbar-menu .navbar-item.has-dropdown').remove();
+    $('.navbar-menu .navbar-end > .navbar-item').has('.dropdown').remove();
+    $('.navbar-menu .navbar-end').each(function () {
+        var $navigation = $(this);
+        $navigation.children().not('a[href="/"], a[href="/posts/"], a[href="/about/"]').remove();
+        ['/', '/posts/', '/about/'].forEach(function (href) {
+            $navigation.children('a[href="' + href + '"]').appendTo($navigation);
+        });
+    });
+
     //Preloader
     $(window).on('load', function () { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation
