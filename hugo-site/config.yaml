@@ -1,4 +1,4 @@
-baseURL: https://deepbytes.netlify.app/
+baseURL: https://deepbytes.pages.dev/
 languageCode: en-us
 title: digital forensic blog
 theme: hugo-refresh
@@ -18,7 +18,8 @@ DefaultContentLanguage: en
 ## Option to disable additional language in your site.
 # disableLanguages: ["ru"]
 
-disableKinds: ["sitemap","RSS"]
+disableKinds:
+  - RSS
 
 # Option to specify that all links will be open in a new tab.
 blackfriday:
