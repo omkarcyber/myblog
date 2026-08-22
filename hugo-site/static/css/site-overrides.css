@@ -1,0 +1,75 @@
+.sidebar-tag-search-container {
+  padding: 1.25rem 1.25rem .5rem;
+}
+
+.sidebar-tag-search {
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: .95rem;
+  padding: .65rem .75rem;
+  width: 100%;
+}
+
+.sidebar-tag-search::placeholder {
+  color: rgba(255, 255, 255, .75);
+}
+
+.sidebar-tag-search:focus {
+  border-color: #f39200;
+  box-shadow: 0 0 0 2px rgba(243, 146, 0, .25);
+  outline: none;
+}
+
+.sidebar-tag-search-empty {
+  color: rgba(255, 255, 255, .75);
+  font-size: .9rem;
+  padding: .75rem 1.25rem;
+}
+
+.sidebar-header img {
+  height: 3rem;
+  object-fit: contain;
+  width: 3rem;
+}
+
+.sidebar-header .sidebar-close {
+  align-items: center;
+  color: #fff !important;
+  display: flex !important;
+  height: 3rem !important;
+  justify-content: center;
+  opacity: 1 !important;
+  position: relative;
+  width: 3rem !important;
+  z-index: 2;
+}
+
+.sidebar-close-icon {
+  color: #fff !important;
+  display: block !important;
+  font-size: 2.75rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.navbar.is-fresh .navbar-item,
+.navbar.is-fresh .navbar-item.left-menu-icon-wrapper,
+.navbar.is-fresh .navbar-end > a.is-secondary {
+  color: #344258;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.navbar.is-fresh .navbar-end > a.is-secondary:hover,
+.navbar.is-fresh .navbar-end > a.is-secondary:focus {
+  color: #c97600;
+}
+
+footer.footer-dark img[src$="footer.svg"] {
+  height: auto;
+  max-width: 300px !important;
+  width: 300px !important;
+}

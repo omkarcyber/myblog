@@ -98,6 +98,50 @@ $(document).ready(function () {
 
     //Sidebar menu
     if ($('.sidebar').length) {
+        $('.sidebar-menu').each(function () {
+            var $menu = $(this);
+            var $tagItems = $menu.find('a[href*="/tags/"]').filter(function () {
+                return /\/tags\/[^/]+\/?$/.test($(this).attr('href'));
+            }).closest('li');
+
+            if (!$tagItems.length) {
+                return;
+            }
+
+            var $search = $('<input>', {
+                'class': 'sidebar-tag-search',
+                'type': 'search',
+                'placeholder': 'Search tags',
+                'aria-label': 'Search tags'
+            });
+            var $searchContainer = $('<div>', {
+                'class': 'sidebar-tag-search-container'
+            }).append($search);
+            var $emptyState = $('<li>', {
+                'class': 'sidebar-tag-search-empty',
+                'text': 'No matching tags'
+            }).hide();
+
+            $menu.before($searchContainer);
+            $menu.append($emptyState);
+
+            $search.on('input', function () {
+                var query = $.trim($(this).val()).toLowerCase();
+                var visibleItems = 0;
+
+                $tagItems.each(function () {
+                    var $item = $(this);
+                    var tagName = $item.find('td').first().text().toLowerCase();
+                    var isVisible = !query || tagName.indexOf(query) !== -1;
+
+                    $item.toggle(isVisible);
+                    visibleItems += isVisible ? 1 : 0;
+                });
+
+                $emptyState.toggle(visibleItems === 0);
+            });
+        });
+
         $(".sidebar-menu > li.have-children a").on("click", function (i) {
             i.preventDefault();
             if (!$(this).parent().hasClass("active")) {

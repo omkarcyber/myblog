@@ -1,0 +1,46 @@
+{{- define "main" -}}
+<header>
+  {{- partial "navbar.html" . -}}
+  {{- partial "navbar-clone.html" . -}}
+</header>
+<main id="learning-modules" class="learning-modules">
+  <section class="section module-intro">
+    <div class="container">
+      <div class="title-wrapper has-text-centered">
+        <p class="home-eyebrow">CHOOSE A PATH</p>
+        <h1 class="title is-2 section-title">Learn by module</h1>
+        <p class="subtitle is-5 is-muted">Jump straight to the subject you want to study. Each module collects its related posts in one place.</p>
+      </div>
+      <div class="module-grid">
+        <a class="module-card module-card--ceh" href="{{ "ceh-malware-analysis/" | relLangURL }}">
+          <span class="module-icon"><i class="fas fa-user-secret"></i></span>
+          <h2>CEH</h2>
+          <p>Ethical hacking concepts, tools, reconnaissance, and lab notes.</p>
+          <span class="module-link">View CEH posts <b>&rarr;</b></span>
+        </a>
+        <a class="module-card module-card--malware" href="{{ "ceh-malware-analysis/" | relLangURL }}">
+          <span class="module-icon"><i class="fas fa-bug"></i></span>
+          <h2>Malware Analysis</h2>
+          <p>Static and dynamic analysis techniques, indicators, and case notes.</p>
+          <span class="module-link">View analysis posts <b>&rarr;</b></span>
+        </a>
+        <a class="module-card module-card--soc" href="{{ "soc-operations/" | relLangURL }}">
+          <span class="module-icon"><i class="fas fa-shield-alt"></i></span>
+          <h2>SOC</h2>
+          <p>Alert triage, detection engineering, incident response, and blue-team workflows.</p>
+          <span class="module-link">View SOC posts <b>&rarr;</b></span>
+        </a>
+        <a class="module-card module-card--forensics" href="{{ "digital-forensics/" | relLangURL }}">
+          <span class="module-icon"><i class="fas fa-fingerprint"></i></span>
+          <h2>Digital Forensics</h2>
+          <p>Evidence acquisition, preservation, examination, and forensic tooling.</p>
+          <span class="module-link">View forensic posts <b>&rarr;</b></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+{{- partial "footer.html" . -}}
+<div id="backtotop"><a href="#"></a></div>
+{{- partial "sidebar.html" . -}}
+{{- end -}}

@@ -1,0 +1,10 @@
+.post-module { padding: 2.4rem 0 1.25rem; scroll-margin-top: 5rem; }
+.post-module + .post-module { border-top: 1px solid #e8edf3; }
+.post-module .title { color: #444f60; margin-bottom: .35rem; }
+.post-module-empty { background: #f6f8fb; border-left: 4px solid #f39200; border-radius: 3px; color: #718096; padding: 1rem 1.15rem; }
+.post-module-heading { color: #536174; font-size: 1rem; font-weight: 700; letter-spacing: .06em; margin: 2.4rem 0 1rem; text-transform: uppercase; }
+.post-module .box { display: flex; flex-direction: column; height: 100%; }
+.post-module .box .action { margin-top: auto; padding-top: 1rem; }
+.forensic-post-card { cursor: pointer; transition: box-shadow .2s ease, transform .2s ease; }
+.forensic-post-card:hover, .forensic-post-card:focus { box-shadow: 0 10px 24px rgba(47, 63, 82, .16); outline: none; transform: translateY(-3px); }
+.forensic-post-card:focus-visible { outline: 3px solid #4fc1ea; outline-offset: 3px; }
